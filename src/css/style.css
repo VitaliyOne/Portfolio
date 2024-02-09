@@ -27,7 +27,7 @@ main {
 }
 
 .mainSection {
-  max-width: 940px;
+  width: 940px;
   height: auto;
 }
 
@@ -37,11 +37,6 @@ main {
   justify-content: space-between;
 }
 
-@media (max-width: 800px) {
-  .navbarList {
-    display: none;
-  }
-}
 .navbarListItem {
   color: #808080;
   cursor: pointer;
@@ -49,6 +44,18 @@ main {
   font-weight: bold;
 }
 
+@media (max-width: 800px) {
+  .navbarList {
+    display: block;
+    width: 300px;
+    text-align: center;
+    width: 100%;
+  }
+  .navbarListItem {
+    margin: 20px 0;
+    font-size: 22px;
+  }
+}
 .activeListItem {
   color: #000000;
 }
@@ -86,6 +93,25 @@ main {
   transition: 300ms;
 }
 
+@media (max-width: 550px) {
+  .textInfo {
+    justify-content: flex-start;
+    align-content: flex-start;
+    flex-direction: column;
+    display: flex;
+    align-items: flex-start;
+    margin: 25px 15px 0 15px;
+  }
+  .mainTextAboutMe {
+    margin-bottom: 0;
+  }
+  .mainLanguageSelection {
+    position: relative;
+    align-self: flex-end;
+    bottom: 45px;
+    margin-bottom: 10px;
+  }
+}
 .mainPhoto {
   width: 100%;
   margin-bottom: 40px;
@@ -129,7 +155,7 @@ main {
   width: 100%;
   margin: 30px 0;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
 }
 
 .skillsListItem {
@@ -138,6 +164,7 @@ main {
   align-items: center;
   justify-content: space-between;
   height: 205px;
+  margin-bottom: 30px;
 }
 
 .skillsImg {
@@ -150,10 +177,12 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
+  display: none;
 }
 
 .portfolioProjects {
   width: 940px;
+  margin: 0 20px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
