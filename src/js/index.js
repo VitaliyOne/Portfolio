@@ -12,9 +12,9 @@ const footerButton = document.getElementById("footer");
 const ageBlock = document.getElementById('age')
 
 
-function handleScrollButtonClick(block, blockScroll = "center") {
+function handleScrollButtonClick(block, positionScroll = "center") {
     if (block){
-        block.scrollIntoView({ block: blockScroll, behavior: "smooth" });
+        block.scrollIntoView({ block: positionScroll, behavior: "smooth" });
     }
 }
 
@@ -30,8 +30,8 @@ footerButton.addEventListener("click",  function(){
     handleScrollButtonClick(footer)}, false);
 
 const getAge = () =>{
-    const now = new Date().valueOf();
-    const birth = new Date(1998, 7, 26).valueOf();
+    const now = new Date();
+    const birth = new Date(1998, 7, 26);
     const age = `Frontend Разработчик <br> ${Math.floor((now - birth) / (1000 * 60 * 60 * 24 * 365))} лет, Киров`
     if (age && ageBlock) {ageBlock.innerHTML = age}
 }
