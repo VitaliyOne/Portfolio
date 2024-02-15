@@ -43,9 +43,10 @@
 		</main>
 		<section class="aboutMe">
 			<h2 class="title">Обо мне</h2>
-			<p class="aboutMeParagraph">
-				Привет, меня зовут Виталий. Я начинающий Frontend-разработчик из Кирова. <br>
-				Мне очень интересна разработка веб-приложений и все, что с ней связано.	<br> <br>
+			<p class="paragraph">
+				Привет, меня зовут Виталий. Я начинающий Frontend-разработчик из Кирова,<br> который ищет развития и профессионального роста <br><br>
+				<!-- Мне очень интересна разработка веб-приложений и все, что с ней связано.	<br> -->
+				Пришёл в Frontend-разработку, чтобы разрабатывать крутые интерфейсы <br> и максимально улучшать пользовательский опыт<br> <br>
 
 				Я начал учиться в 2023 году и стараюсь развиваться в этой области <br>
 				Я изучаю много информации, а также смотрю курсы <br> в общем, я стараюсь развиваться <br> <br>
@@ -54,87 +55,89 @@
 				Я буду рад, если вы ответите новичку.
 			</p>
 		</section>
-		<nav class="skills">
-			<section class="skillsSection">
+		<section class="skillsSection">
+			<nav class="skills">
 				<h2 class="title">Скиллы</h2>
 				<p>Основные технологии, которые я использую</p>
-				<ul class="skillsList">
-					<il class="skillsListItem">
-						<img class="skillsImg" src="../img/js.png" alt="JavaScript">
+				<ul class="list">
+					<il class="item"> 
+						<img class="img" src="../img/js.png" alt="JavaScript">
 						<span>JavaScript</span>
 						<div class="loaderСontainer">
 							<div class="loader jsColor"></div>
 						</div>
 					</il>
-					<il class="skillsListItem">
-						<img class="skillsImg" src="../img/html.png" alt="HTML/CSS">
+					<il class="item"> 
+						<img class="img" src="../img/html.png" alt="HTML/CSS">
 						<span>HTML/CSS</span>
 						<div class="loaderСontainer">
 							<div class="loader htmlColor"></div>
 						</div>
 					</il>
-					<il class="skillsListItem">
-						<img class="skillsImg" src="../img/react.png" alt="React">
+					<il class="item"> 
+						<img class="img" src="../img/react.png" alt="React">
 						<span>React</span>
 						<div class="loaderСontainer">
 							<div class="loader reactColor"></div>
 						</div>
 					</il>
-					<il class="skillsListItem">
-						<img class="skillsImg" src="../img/webpack.png" alt="webpack">
+					<il class="item"> 
+						<img class="img" src="../img/webpack.png" alt="webpack">
 						<span>Webpack</span>
 						<div class="loaderСontainer">
 							<div class="loader webpackColor"></div>
 						</div>
 					</il>
 				</ul>
-			</section>
-		</nav>
-		<section class="portfolio">
-			<h2 class="title">Портфолио</h2>
-			<p >Мои учебные пет-проекты</p>
-			<nav class="portfolioProjects">
-				<div>
-					<p class="titleProgect">1. Список героев марвел</p>
-					<div class="infoProgect">
-						<img class="" src="../img/marvel-heroes.png" alt="marvel-heroes">
-						<div>
-							<p>22</p>
-							<a href=https://marvel-heroes-list.vercel.app/ target="_blank"><button class="footerButton">Посмотреть демо</button></a>
-						</div>
-					</div>
-				</div>
-				<div>
-					<p class="titleProgect">2. Конструктор постов</p>
-					<div class="infoProgect">
-						<img class="" src="../img/post-builder.png" alt="marvel-heroes">
-						<div>
-							<p>22</p>
-							<a href=https://post-builder.vercel.app/ target="_blank"><button class="footerButton">Посмотреть демо</button></a>
-						</div>
-					</div>
-				</div>
-				<div>
-					<p class="titleProgect">3. Форма обратной связи через телеграм бота</p>
-					<div class="infoProgect">
-						<img class="" src="../img/telegram-feedback.png" alt="marvel-heroes">
-						<div>
-							<p>22</p>
-							<a href=https://vitaliyone.github.io/tg-contact-form/ target="_blank"><button class="footerButton">Посмотреть демо</button></a>
-						</div>
-					</div>
-				</div>
-				<div>
-					<p class="titleProgect">4. Простой калькулятор</p>
-					<div class="infoProgect">
-						<img class="" src="../img/basic-calculator.png" alt="marvel-heroes">
-						<div>
-							<p>22</p>
-							<a href=https://vitaliyone.github.io/basic-calculator/ target="_blank"><button class="footerButton">Посмотреть демо</button></a>
-						</div>
-					</div>
-				</div>
 			</nav>
+		</section>
+		<section class="portfolio">
+				<div class="portfolioProjects">
+				<h2 class="title">Портфолио</h2>
+				<p >Мои пет-проекты</p>
+				<nav class="petProjects">
+					<div>
+						<p class="titleProject">1. Список героев марвел</p>
+						<div class="infoProject">
+							<img class="" src="../img/marvel-heroes.png" alt="marvel-heroes">
+							<div>
+								<p>Технологии: React, JavaScript, TypeScript, REST API, HTML, CSS</p>
+								<a href=https://marvel-heroes-list.vercel.app/ target="_blank"><button class="footerButton">Посмотреть демо</button></a>
+							</div>
+						</div>
+					</div>
+					<div>
+						<p class="titleProject">2. Конструктор постов</p>
+						<div class="infoProject">
+							<img class="" src="../img/post-builder.png" alt="marvel-heroes">
+							<div>
+								<p>Технологии: React, JavaScript, HTML, CSS, REST API</p>
+								<a href=https://post-builder.vercel.app/ target="_blank"><button class="footerButton">Посмотреть демо</button></a>
+							</div>
+						</div>
+					</div>
+					<div>
+						<p class="titleProject">3. Форма обратной связи через телеграм бота</p>
+						<div class="infoProject">
+							<img class="" src="../img/telegram-feedback.png" alt="marvel-heroes">
+							<div>
+								<p>Технологии: JavaScript, HTML, CSS, REST API</p>
+								<a href=https://vitaliyone.github.io/tg-contact-form/ target="_blank"><button class="footerButton">Посмотреть демо</button></a>
+							</div>
+						</div>
+					</div>
+					<div>
+						<p class="titleProject">4. Простой калькулятор</p>
+						<div class="infoProject">
+							<img class="" src="../img/basic-calculator.png" alt="marvel-heroes">
+							<div>
+								<p>22</p>
+								<a href=https://vitaliyone.github.io/basic-calculator/ target="_blank"><button class="footerButton">Посмотреть демо</button></a>
+							</div>
+						</div>
+					</div>
+				</nav>
+			</div>	
 		</section>
 		<footer class="footer">
 			<H2 class="title"> Контакты</H2>
