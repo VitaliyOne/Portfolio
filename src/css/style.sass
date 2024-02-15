@@ -20,7 +20,7 @@ main
 //     display: none
 
 .navbarListItem
-    color: #808080
+    color: $textShadow
     cursor: pointer
     margin: 30px 40px
     font-weight: bold
@@ -63,7 +63,7 @@ main
   transition: 300ms
 
 .on
-  color: #808080
+  color: $textShadow
   transition: 300ms
 
 @media (max-width: 550px)
@@ -90,7 +90,7 @@ main
 
 .aboutMe
     width: 100%
-    background-color: #f0f0f0
+    background-color: $greyBackColor
     display: flex
     flex-direction: column
     justify-content: space-between
@@ -138,27 +138,38 @@ main
 .portfolio
     display: flex
     justify-content: center
-    background-color: #f0f0f0
+    background-color: $greyBackColor
 
-.portfolioProjects
-    width: 940px
-    text-align: center
-    margin: 0 20px
+    & .projects
+        width: 940px
+        text-align: center
+        margin: 0 20px
 
-.petProjects
-    width: 100%
-    margin: 20px 0
-    display: grid
-    grid-template-columns: repeat(auto-fill, minmax(350px, max-content))
-    grid-gap: 20px
-    justify-content: center
+    & .petProjects
+        width: 100%
+        margin: 20px 0
+        display: grid
+        grid-template-columns: repeat(auto-fill, minmax(350px, max-content))
+        grid-gap: 20px
+        justify-content: center
 
-.titleProject
-    margin: 20px 0
-    text-align: center
+    @media (max-width: 800px)
+        .petProjects
+            grid-template-columns: repeat(auto-fill, minmax(270px, max-content))
 
-.infoProject
-    width: 100%    
+    & .titleProject
+        margin: 20px 0
+        text-align: center
+
+    & .infoProject
+        width: 100%
+        
+        & .textTechnologies
+            font-size: 16px
+            margin: 15px 0
+
+        & .img
+            max-height: 470px
 
 .footer
     display: flex
@@ -173,7 +184,7 @@ main
     background-color: #070707
     border: 0
     color: white
-    padding: 12px 20px 10px 20px
+    padding: 10px 15px
     border-radius: 50px
     cursor: pointer
 
@@ -183,8 +194,11 @@ main
     justify-content: space-between
     margin: 46px 0 46px 0
 
+    & .icon
+        width: 40px
+
 .footerText
-    color: #808080
+    color: $textShadow
     font-size: 14px
     margin-bottom: 60px
 

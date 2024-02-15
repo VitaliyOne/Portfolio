@@ -171,14 +171,12 @@ main {
   justify-content: center;
   background-color: #f0f0f0;
 }
-
-.portfolioProjects {
+.portfolio .projects {
   width: 940px;
   text-align: center;
   margin: 0 20px;
 }
-
-.petProjects {
+.portfolio .petProjects {
   width: 100%;
   margin: 20px 0;
   display: grid;
@@ -186,14 +184,24 @@ main {
   grid-gap: 20px;
   justify-content: center;
 }
-
-.titleProject {
+@media (max-width: 800px) {
+  .portfolio .petProjects {
+    grid-template-columns: repeat(auto-fill, minmax(270px, max-content));
+  }
+}
+.portfolio .titleProject {
   margin: 20px 0;
   text-align: center;
 }
-
-.infoProject {
+.portfolio .infoProject {
   width: 100%;
+}
+.portfolio .infoProject .textTechnologies {
+  font-size: 16px;
+  margin: 15px 0;
+}
+.portfolio .infoProject .img {
+  max-height: 470px;
 }
 
 .footer {
@@ -211,7 +219,7 @@ main {
   background-color: #070707;
   border: 0;
   color: white;
-  padding: 12px 20px 10px 20px;
+  padding: 10px 15px;
   border-radius: 50px;
   cursor: pointer;
 }
@@ -221,6 +229,9 @@ main {
   display: flex;
   justify-content: space-between;
   margin: 46px 0 46px 0;
+}
+.footerList .icon {
+  width: 40px;
 }
 
 .footerText {
