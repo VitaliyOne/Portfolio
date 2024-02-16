@@ -1,15 +1,17 @@
-# HTML Starter Template
-Portfolio
-## Установка
+# Portfolio
 
-Требования:
+Live demo: vitaliyone.github.io/Portfolio/
+
+## Installation
+
+Requirements:
 
 - NodeJS: https://nodejs.org/en/
 
 ```bash
-# установить зависимости
+# install dependencies
 $ npm install
 
-# запуск
+# launch
 $ npm start
 ```
