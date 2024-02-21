@@ -36,7 +36,6 @@ const getAge = () =>{
     const age = `Frontend Разработчик <br> ${Math.floor((now - birth) / (1000 * 60 * 60 * 24 * 365))} лет, Киров`
     if (age && ageBlock) {ageBlock.innerHTML = age}
 }
-window.onload = getAge;
 
 let iconBox = document.querySelector(".mainAboutMeIcon");
 let checkTheme = "";
@@ -72,3 +71,5 @@ iconBox.addEventListener("click", () => {
         getIcon("light"))
     }
 );
+
+window.onload = getAge;
