@@ -1,11 +1,19 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+html[data-theme=light] {
+  --font-weight: bold;
+}
+
+html[data-theme=dark] {
+  --font-weight: normal;
+}
+
 * {
   padding: 0px;
   margin: 0px;
   font-family: "Roboto", sans-serif;
   font-size: 18px;
-  font-weight: bold;
+  font-weight: var(--font-weight);
 }
 
 ul, ul li {
@@ -19,6 +27,10 @@ img, svg {
 
 a {
   text-decoration: none;
+}
+
+h1, h2 {
+  font-weight: bold;
 }
 
 html[data-theme=light] {
@@ -184,7 +196,7 @@ main {
 }
 
 .portfolio {
-  padding: 20px 0;
+  padding-bottom: 20px;
   display: flex;
   justify-content: center;
   background-color: var(--color-backgraund-grey);
@@ -197,7 +209,7 @@ main {
 }
 .portfolio .petProjects {
   width: 100%;
-  margin: 20px 0;
+  margin-bottom: 20px;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(350px, max-content));
   grid-gap: 20px;
@@ -207,6 +219,13 @@ main {
   .portfolio .petProjects {
     grid-template-columns: repeat(auto-fill, minmax(270px, max-content));
   }
+}
+.portfolio .petProjectsTitle {
+  width: 100%;
+  text-align: center;
+  padding-top: 20px;
+  grid-column: 1/-1;
+  font-size: 22px;
 }
 .portfolio .cardProject {
   box-shadow: var(--box-shadow);
@@ -230,6 +249,7 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
+  gap: 40px;
   margin-bottom: 10px;
 }
 .portfolio .infoProject .buttonLink {
@@ -257,7 +277,7 @@ main {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  padding: 20px 0;
+  padding-bottom: 20px;
   background-color: var(--color-background);
   color: var(--color-text);
 }
@@ -292,6 +312,7 @@ main {
   color: var(--color-text-shadow);
   font-size: 14px;
   margin-bottom: 60px;
+  font-weight: bold;
 }
 
 .loaderСontainer {
@@ -324,4 +345,4 @@ main {
 .webpackColor {
   background-color: #ffffff;
   width: 20%;
-}
+}/*# sourceMappingURL=style.css.map */

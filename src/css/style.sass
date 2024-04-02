@@ -7,7 +7,6 @@ html[data-theme="light"]
   --color-backgraund-grey: #{$greyBackGrColor}
   --box-shadow: #{$boxShadow}
 
-
 html[data-theme="dark"] 
   --color-text: #{$darkColorText}
   --color-text-shadow: #{$darkColorTextShadow}
@@ -28,12 +27,6 @@ main
     display: flex
     flex-direction: row
     justify-content: space-between
-
-// .open
-//     display: block
-
-// .close
-//     display: none
 
 .navbarListItem
     color: var(--color-text-shadow)
@@ -82,13 +75,6 @@ main
     &:hover
         transform: scale(1.1) rotate(-10deg)
     
-// .off
-//   transition: 300ms
-
-// .on
-//   color: var(--color-text-shadow)
-//   transition: 300ms
-
 @media (max-width: 550px)
     .textInfo
         justify-content: flex-start
@@ -162,7 +148,7 @@ main
 
 
 .portfolio
-    padding: 20px 0
+    padding-bottom: 20px
     display: flex
     justify-content: center
     background-color: var(--color-backgraund-grey)
@@ -175,7 +161,7 @@ main
 
     & .petProjects
         width: 100%
-        margin: 20px 0
+        margin-bottom: 20px
         display: grid
         grid-template-columns: repeat(auto-fill, minmax(350px, max-content))
         grid-gap: 20px
@@ -184,6 +170,13 @@ main
     @media (max-width: 800px)
         .petProjects
             grid-template-columns: repeat(auto-fill, minmax(270px, max-content))
+
+    & .petProjectsTitle
+        width: 100%
+        text-align: center
+        padding-top: 20px
+        grid-column: 1 / -1
+        font-size: 22px
 
     & .cardProject
         box-shadow: var(--box-shadow)
@@ -207,7 +200,9 @@ main
             display: flex
             align-items: center
             justify-content: center
-            margin-bottom: 10px        
+            gap: 40px
+            margin-bottom: 10px
+
 
         & .buttonLink
             gap: 12px
@@ -233,7 +228,7 @@ main
     flex-direction: column
     align-items: center
     text-align: center
-    padding: 20px 0
+    padding-bottom: 20px
     background-color: var(--color-background)
     color: var(--color-text)
 
@@ -266,6 +261,7 @@ main
     color: var(--color-text-shadow)
     font-size: 14px
     margin-bottom: 60px
+    font-weight: bold
 
 .loaderСontainer
     width: 70%

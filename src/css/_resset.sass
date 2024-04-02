@@ -15,12 +15,21 @@ $darkBoxShadow: 0px 2px 6px rgba(0, 0, 0, 0.5)
 $textShadow: #808080
 $greyBackColor: #808080
 
+$fontBold: bold
+$fontNormal: normal
+
+html[data-theme="light"] 
+	--font-weight: #{$fontBold}
+
+html[data-theme="dark"] 
+	--font-weight: #{$fontNormal}
+
 * 
 	padding: 0px
 	margin: 0px
 	font-family: 'Roboto', sans-serif
 	font-size: 18px
-	font-weight: bold
+	font-weight: var(--font-weight)
 
 ul, ul li 
 	list-style: none
@@ -32,3 +41,6 @@ img, svg
 
 a
 	text-decoration: none
+
+h1, h2
+	font-weight: bold
